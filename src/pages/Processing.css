@@ -1,0 +1,123 @@
+/* Parent container - centers everything */
+.processing-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Changed to flex-start to align card at top */
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #f5f3ff, #edf2f7);
+  min-height: 100vh;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Card */
+.processing-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  max-width: 500px; /* Narrower to match the second image's card width */
+  width: 100%;
+  margin: 2rem auto; /* Added top margin for spacing from top */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid #e2e8f0; /* Light border for card effect */
+}
+
+/* Title & Subtitle */
+.processing-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+  width: 100%;
+}
+
+.processing-subtitle {
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+  width: 100%;
+}
+
+/* Upload / processing box */
+.processing-box {
+  border: 2px dashed #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  background: #fafafa;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.processing-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #4a5568;
+}
+
+.processing-box p {
+  margin: 0;
+  line-height: 1.6;
+  color: #718096;
+}
+
+/* Results / transcript box */
+.results-box {
+  background: #f7fafc;
+  padding: 1.2rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  color: #2d3748;
+  width: 100%;
+  text-align: left;
+  border: 1px solid #e2e8f0;
+}
+
+.results-box h4 {
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.results-box p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Button */
+.process-btn {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  background: linear-gradient(90deg, #ed64a6, #d53f8c);
+  margin: 0 auto;
+  display: block;
+}
+
+.process-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .processing-card {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+  .processing-box, .results-box, .process-btn { width: 100%; }
+}

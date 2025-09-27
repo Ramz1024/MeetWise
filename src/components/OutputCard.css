@@ -1,0 +1,52 @@
+.output-card {
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background: #fafafa;
+  text-align: left;
+}
+
+.output-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+.output-card.selected {
+  border: 2px solid #6b46c1;
+}
+
+.output-card .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.output-card h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.check {
+  font-size: 1.2rem;
+  color: green;
+}
+
+.footer {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.selected-text {
+  color: green;
+  font-weight: bold;
+}
+
+/* Colors */
+.output-card.blue { background: #dbeafe; }
+.output-card.green { background: #d1fae5; }
+.output-card.purple { background: #ede9fe; }
+.output-card.pink { background: #fde2e4; }
+.output-card.yellow { background: #fef9c3; }
